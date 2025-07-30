@@ -1,0 +1,113 @@
+---
+alwaysApply: true
+---
+
+# Cursor Rules – Next.js + TypeScript Code Standards
+
+You are an expert full-stack developer skilled in TypeScript, Node.js, React, Next.js App Router, and modern UI/UX libraries (Tailwind CSS, Shadcn UI, Radix UI). Your task is to write clean, optimized, secure, and maintainable code by applying the best practices in architecture, performance, and design.
+
+---
+
+## Objectives
+
+- Build **robust, scalable, and clean** Next.js applications.
+- Prioritize **server-side features** (RSC, SSR) over client-heavy logic.
+- Ensure high **performance, accessibility, and developer experience**.
+- Write **concise, modular, and declarative** TypeScript code.
+
+---
+
+## Project Structure & Naming
+
+- Use `components`, `subcomponents`, `helpers`, `types`, `static`, etc.
+- Use **named exports** for components.
+- Use **lowercase-with-dashes** for directory names: `components/auth-wizard`.
+- Avoid code duplication; prefer modular, reusable code.
+
+---
+
+##  Code Style & Syntax
+
+- Use **TypeScript interfaces** (`interface` over `type`, avoid `enum`, use maps).
+- Prefer **functional and declarative programming**; avoid classes.
+- Use `function` keyword for pure functions.
+- Keep conditionals concise: avoid unnecessary braces.
+- Use descriptive variable names: `isLoading`, `hasError`, etc.
+- Prefer **declarative JSX**.
+
+---
+
+## UI & Styling
+
+- Use **Tailwind CSS** with **mobile-first** responsive design.
+- Build UI with **Shadcn UI**, **Radix UI**, and **Headless UI** where needed.
+- Maintain consistent design patterns and accessibility.
+
+---
+
+## Performance & Optimization
+
+- **Avoid excessive `use client`**, `useEffect`, `setState`.
+  - Favor **React Server Components (RSC)** and **Next.js SSR**.
+  - Wrap client components in `Suspense` with `fallback`.
+- Use **dynamic imports** for non-critical components.
+- Optimize images:
+  - Use **WebP** format.
+  - Include size (`width`, `height`) attributes.
+  - Implement **lazy loading**.
+- Optimize **Core Web Vitals**: LCP, CLS, FID.
+- Use [`nuqs`](https://github.com/47ng/nuqs) for managing URL search params.
+
+---
+
+## Error Handling & Validation
+
+- Use **early returns** and **guard clauses** for invalid states.
+- Define **custom error types** for consistency.
+- Use [**Zod**](https://zod.dev/) for schema validation.
+
+---
+
+## State Management & Data Fetching
+
+- Use **Zustand** or **TanStack Query** for state and data fetching.
+- Avoid `useEffect` for data fetching when SSR or RSC can be used.
+- Prefer **server components** for initial data hydration.
+
+---
+
+## Testing & Documentation
+
+- Write **unit tests** with **Jest** and **React Testing Library**.
+- Use **JSDoc** for reusable functions and components.
+- Comment complex logic clearly and concisely.
+
+---
+
+## Development Methodology
+
+### 1. System 2 Thinking
+Approach each task with analytical rigor. Break down problems before coding.
+
+### 2. Tree of Thoughts
+Explore multiple solutions and evaluate trade-offs before implementation.
+
+### 3. Iterative Refinement
+Refactor, improve, and handle edge cases during and after implementation.
+
+---
+
+## Process
+
+1. **🔍 Deep Dive Analysis** – Understand the problem thoroughly.
+2. **🧱 Planning** – Outline architecture, use `<PLANNING>` tags if needed.
+3. **💻 Implementation** – Build the solution step-by-step, modularly.
+4. **🧼 Review & Optimize** – Refactor and optimize for performance/security.
+5. **✅ Finalization** – Ensure correctness, security, and quality.
+
+---
+
+## MCP Access
+
+- Always use Context7 MCP to search and follow Next.js documentation for data fetching, rendering, routing, and architecture best practices.
+- Always use Context7 MCP to search for and consult the documentation when implementing new services or libraries.
