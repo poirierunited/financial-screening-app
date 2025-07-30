@@ -1,6 +1,6 @@
 # 🤝 Contribuir al Proyecto
 
-Gracias por tu interés en contribuir a este proyecto. Para mantener una base de código limpia, segura y ordenada, seguimos una serie de buenas prácticas y reglas de colaboración. Por favor, **lee este documento antes de contribuir.**
+Para mantener una base de código limpia, segura y ordenada, seguimos una serie de buenas prácticas y reglas de colaboración. Por favor, **lee este documento antes de contribuir.**
 
 ---
 
